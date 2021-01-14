@@ -1,11 +1,20 @@
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
 
-    </div>
-  );
+  loguer = () => {
+    console.log('Bonjour');
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <h1>Exercice 8</h1>
+        <button onClick={this.loguer}>Clique ici</button>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
